@@ -1,0 +1,64 @@
+═══════════════════════════════════════════════════════════
+  ✅ DA SUA LOI FONT TIENG VIET!
+═══════════════════════════════════════════════════════════
+
+🐛 TRUOC DAY:
+   100000 → "Ma**trÁm Á·a**ng" (SAI!)
+
+✅ BAY GIO:
+   100000 → "Mot tram nghin dong" (DUNG!)
+
+
+📝 THAY DOI
+═══════════════════════════════════════════════════════════
+
+Loai bo TAT CA ky tu co dau trong code VBA:
+
+   - TRUOC: "một", "trăm", "đồng", "nghìn"...
+   - SAU:   "mot", "tram", "dong", "nghin"...
+
+==> KET QUA: Khong co loi font nua!
+
+
+🚀 CAI DAT LAI
+═══════════════════════════════════════════════════════════
+
+1. Xoa cai dat cu (neu co):
+   - Mo Excel
+   - Alt + F11
+   - Xoa "DocTienModule" trong VBA Editor
+
+2. Chay lai: DocTien_AutoInstaller.exe
+
+3. Nhan "Cai dat tu dong"
+
+4. XONG!
+
+
+📝 VI DU KET QUA MOI
+═══════════════════════════════════════════════════════════
+
+=DocTien(12345)
+→ Muoi hai nghin ba tram bon muoi lam dong
+
+=DocTien(1000000)
+→ Mot trieu dong
+
+=DocTien(2500.50)
+→ Hai nghin nam tram dong phay nam muoi dong
+
+
+⚠️ LUU Y
+═══════════════════════════════════════════════════════════
+
+KET QUA HIEN RAT CA KY TU KHONG DAU!
+- "mot" thay vi "một"
+- "tram" thay vi "trăm"  
+- "dong" thay vi "đồng"
+
+DAY LA DE TRANH LOI ENCODING TRONG EXCEL!
+
+
+═══════════════════════════════════════════════════════════
+Version 1.0.2 | Fixed Vietnamese Font Encoding
+═══════════════════════════════════════════════════════════

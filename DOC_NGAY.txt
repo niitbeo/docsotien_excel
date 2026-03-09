@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════
+    📊 DOCTIEN - CHUYEN SO THANH CHU TRONG EXCEL
+═══════════════════════════════════════════════════════════
+
+🚀 CAI DAT TU DONG - CHI 1 CLICK!
+───────────────────────────────────────────────────────────
+
+CACH 1: CHAY FILE .BAT (DE NHAT)
+   → Nhan 2 cai vao file: CAI_DAT_NGAY.bat
+   → Xong!
+
+CACH 2: CHAY FILE .PS1
+   → Click phai vao: CAI_DAT_TU_DONG.ps1
+   → Chon "Run with PowerShell"
+   → Xong!
+
+
+✅ SAU KHI CAI DAT
+───────────────────────────────────────────────────────────
+
+1. Mo Excel (hoac khoi dong lai neu dang mo)
+2. Go cong thuc: =DocTien(A1)
+3. Xong!
+
+
+🎨 VI DU
+───────────────────────────────────────────────────────────
+
+    A           B
+    ──────      ───────────────────────────────────────
+    12345       =DocTien(A1)
+                -> Muoi hai nghin ba tram bon muoi lam dong
+
+    1000000     =DocTien(A2)
+                -> Mot trieu dong
+
+
+📁 CAC FILE QUAN TRONG
+───────────────────────────────────────────────────────────
+
+✅ CAI_DAT_NGAY.bat           <- CHAY FILE NAY!
+✅ CAI_DAT_TU_DONG.ps1         <- Hoac file nay
+✅ DocTien.bas                 <- Ma VBA
+✅ Demo_DocTien.xlsx           <- File Excel mau
+✅ HUONG_DAN_CAI_DAT.html      <- Huong dan chi tiet
+
+
+📞 HO TRO
+───────────────────────────────────────────────────────────
+
+Nguyen Le Truong - 0888849413
+
+
+═══════════════════════════════════════════════════════════
+Made with ❤️ | Version 1.0.0
+═══════════════════════════════════════════════════════════

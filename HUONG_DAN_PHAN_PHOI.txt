@@ -1,0 +1,141 @@
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   📦 HUONG DAN PHAN PHOI DOCTIEN                         ║
+║   Dung cho nguoi khong biet ky thuat                     ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+
+
+🎯 CHI CAN 1 FILE DUY NHAT!
+═══════════════════════════════════════════════════════════
+
+>>> DocTien_FINAL_FIXED.exe <<<
+
+   - Kich thuoc: ~10.3 MB
+   - Khong can cai dat gi them
+   - Chay duoc tren moi may Windows
+
+
+📤 CACH CHIA SE
+═══════════════════════════════════════════════════════════
+
+CACH 1: USB/O cung di dong
+   1. Copy file .exe vao USB
+   2. Dem sang may khac
+   3. Copy vao Desktop
+   4. Nhan doi chuot chay
+
+CACH 2: Email
+   1. Dinh kem file .exe vao email
+   2. Gui cho nguoi can
+   3. Nguoi nhan download
+   4. Nhan doi chuot chay
+
+CACH 3: Google Drive / OneDrive
+   1. Upload file .exe len Drive
+   2. Chia se link
+   3. Nguoi khac download
+   4. Nhan doi chuot chay
+
+CACH 4: Mang noi bo (LAN)
+   1. Copy vao thu muc chia se
+   2. Nguoi khac copy ve
+   3. Nhan doi chuot chay
+
+
+✅ YEU CAU MAY TINH
+═══════════════════════════════════════════════════════════
+
+   ✅ Windows 10 hoac 11
+   ✅ Microsoft Excel (2010-2024)
+   ✅ Khong can Python
+   ✅ Khong can quyen Admin
+
+
+🚀 HUONG DAN CHO NGUOI DUNG
+═══════════════════════════════════════════════════════════
+
+BUOC 1: Nhan doi chuot vao file DocTien_FINAL_FIXED.exe
+
+BUOC 2: Neu Windows bao "Windows protected your PC":
+   - Nhan "More info"
+   - Nhan "Run anyway"
+
+BUOC 3: Nhan nut "Cai dat tu dong"
+
+BUOC 4: Cho 10-20 giay
+
+BUOC 5: Neu thanh cong, se thay thong bao:
+   "Cai dat hoan tat!"
+
+BUOC 6: Mo Excel, go cong thuc:
+   =DocTien(100000)
+
+BUOC 7: Ket qua:
+   "Mot tram nghin dong"
+
+
+⚠️ NEU GAP LOI
+═══════════════════════════════════════════════════════════
+
+LOI 1: "Trust access to VBA project"
+GIAI PHAP:
+   1. Mo Excel
+   2. File → Options → Trust Center → Trust Center Settings
+   3. Macro Settings
+   4. Tich: "Trust access to the VBA project object model"
+   5. OK
+   6. Chay lai file .exe
+
+LOI 2: "Windows Defender blocked"
+GIAI PHAP:
+   1. Windows Security → Virus & threat protection
+   2. Protection history
+   3. Tim file DocTien_FINAL_FIXED.exe
+   4. Actions → Allow
+   5. Chay lai file .exe
+
+LOI 3: Ham #NAME? trong Excel
+GIAI PHAP:
+   1. Dong Excel
+   2. Mo lai Excel
+   3. Nhan "Enable Content" neu co canh bao
+   4. Thu lai
+
+
+💡 LUU Y QUAN TRONG
+═══════════════════════════════════════════════════════════
+
+   ✅ File .exe da chua TAT CA moi thu
+   ✅ Khong can file DocTien.bas rieng
+   ✅ Khong can cai Python
+   ✅ Chi can copy 1 file .exe la du
+
+   ⚠️ Neu doi ten file .exe, van chay binh thuong
+   ⚠️ Neu copy vao thu muc khac, van chay binh thuong
+   ⚠️ Neu chuyen qua mang, van chay binh thuong
+
+
+📊 KET QUA SAU KHI CAI
+═══════════════════════════════════════════════════════════
+
+   =DocTien(12345)
+   → Muoi hai nghin ba tram bon muoi lam dong
+
+   =DocTien(15000000)
+   → Muoi lam trieu dong
+
+   =DocTien(1000000)
+   → Mot trieu dong
+
+
+📞 HO TRO
+═══════════════════════════════════════════════════════════
+
+   Nguyen Le Truong - 0888849413
+
+
+═══════════════════════════════════════════════════════════
+Version 1.0.4 FINAL | Portable - Single File
+Windows 10/11 | Excel 2010-2024
+═══════════════════════════════════════════════════════════

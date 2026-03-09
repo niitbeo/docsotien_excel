@@ -1,0 +1,84 @@
+╔═══════════════════════════════════════════════════════════╗
+║                                                           ║
+║   ✅ DA SUA LOI TRIEU - TY!                               ║
+║   Version 1.0.4 FINAL - Fixed Unit Bug                   ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+
+
+🐛 LOI TRUOC DAY
+═══════════════════════════════════════════════════════════
+
+   15000000 → "Mười lăm đồng" ❌ SAI!
+
+
+✅ DA SUA
+═══════════════════════════════════════════════════════════
+
+   15000000 → "Mười lăm triệu đồng" ✅ DUNG!
+
+
+📝 CAC VI DU KHAC
+═══════════════════════════════════════════════════════════
+
+   =DocTien(15000000)
+   → Mười lăm triệu đồng ✅
+
+   =DocTien(5000)
+   → Năm nghìn đồng ✅
+
+   =DocTien(2000000000)
+   → Hai tỷ đồng ✅
+
+   =DocTien(123456789)
+   → Một trăm hai mươi ba triệu bốn trăm năm mươi sáu nghìn
+     bảy trăm tám mươi chín đồng ✅
+
+   =DocTien(999999999)
+   → Chín trăm chín mươi chín triệu chín trăm chín mươi chín nghìn
+     chín trăm chín mươi chín đồng ✅
+
+
+🔧 NGUYEN NHAN LOI
+═══════════════════════════════════════════════════════════
+
+Khi so chi co 1 nhom (vi du: 15 trieu = 15,000,000),
+code truoc khong them don vi "trieu" vao!
+
+DA SUA: Them logic kiem tra - neu Hang > 1 (khong phai
+hang don vi), luon them don vi hang vao!
+
+
+🚀 FILE MOI
+═══════════════════════════════════════════════════════════
+
+>>> DocTien_FINAL_FIXED.exe <<<
+
+   1. Chay file tren
+   2. Nhan "Cai dat tu dong"
+   3. Mo Excel
+   4. Go: =DocTien(15000000)
+   5. Ket qua: "Mười lăm triệu đồng" ✅
+
+
+✅ TINH NANG DAY DU
+═══════════════════════════════════════════════════════════
+
+   ✅ TIENG VIET CO DAU DAY DU (ă, â, đ, ê, ô, ơ, ư...)
+   ✅ Doc dung don vi: dong, nghin, trieu, ty
+   ✅ Ho tro so thap phan
+   ✅ Ho tro so am
+   ✅ Viet hoa chu cai dau
+   ✅ Su dung Unicode ChrW()
+
+
+📞 LIEN HE
+═══════════════════════════════════════════════════════════
+
+   Nguyen Le Truong - 0888849413
+
+
+═══════════════════════════════════════════════════════════
+Version 1.0.4 FINAL | Fixed Unit (triệu, tỷ, nghìn) Bug
+Tested with all number ranges
+═══════════════════════════════════════════════════════════

@@ -1,0 +1,69 @@
+═══════════════════════════════════════════════════════════
+    📊 DOCTIEN - CHUYỂN SỐ THÀNH CHỮ TRONG EXCEL
+═══════════════════════════════════════════════════════════
+
+🎯 CÀI ĐẶT CỰC NHANH - CHỈ 2 BƯỚC!
+───────────────────────────────────────────────────────────
+
+BƯỚC 1: Chạy file DocTien_Installer.exe
+   • Nhấn nút "Cài đặt"
+   • Chờ đến khi nhận được thông báo "Cài đặt hoàn tất!"
+
+BƯỚC 2: Mở Microsoft Excel
+   • Nếu Excel đang mở → Đóng và mở lại
+   • Nhấn "Enable Content" nếu có cảnh báo bảo mật
+
+✅ XONG! Giờ bạn có thể dùng hàm =DocTien()
+
+
+📝 CÁCH SỬ DỤNG
+───────────────────────────────────────────────────────────
+
+Gõ công thức trong Excel:
+
+    =DocTien(A1)        ← A1 là ô chứa số tiền
+    =DocTien(12345)     ← Hoặc gõ số trực tiếp
+
+
+🎨 VÍ DỤ THỰC TẾ
+───────────────────────────────────────────────────────────
+
+    A                   B
+    ─────────────────   ─────────────────────────────────────────
+    12345               =DocTien(A1)
+                        → Mười hai nghìn ba trăm bốn mươi lăm đồng
+
+    1000000             =DocTien(A2)
+                        → Một triệu đồng
+
+    2500.50             =DocTien(A3)
+                        → Hai nghìn năm trăm đồng phẩy năm mươi đồng
+
+
+⚠️ NẾU HÀM DOCTIEN() CHƯA HOẠT ĐỘNG
+───────────────────────────────────────────────────────────
+
+1. Kiểm tra Macro đã được bật:
+   File → Options → Trust Center → Trust Center Settings
+   → Macro Settings → Chọn "Enable all macros"
+
+2. Kiểm tra Add-in đã được kích hoạt:
+   File → Options → Add-ins → nhấn "Go..."
+   → Tích chọn "DocTien" → OK
+
+3. Khởi động lại Excel
+
+
+📞 HỖ TRỢ
+───────────────────────────────────────────────────────────
+
+Nếu vẫn gặp vấn đề:
+• Kiểm tra file: C:\Users\nltruong\AppData\Roaming\Microsoft\Excel\XLSTART\DocTien.xlam
+• Hoặc: C:\Users\nltruong\AppData\Roaming\Microsoft\AddIns\DocTien.bas
+
+Liên hệ: Nguyễn Lê Trường - 0888849413
+
+
+═══════════════════════════════════════════════════════════
+Made with ❤️ for Vietnamese Excel users | Version 1.0.0
+═══════════════════════════════════════════════════════════

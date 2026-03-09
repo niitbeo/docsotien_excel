@@ -1,0 +1,91 @@
+═══════════════════════════════════════════════════════════
+  📊 HƯỚNG DẪN CÀI ĐẶT DOCTIEN - SIÊU ĐỠN GIẢN!
+═══════════════════════════════════════════════════════════
+
+🎯 CÁCH CÀI ĐẶT (CHỈ LÀM 1 LẦN - DÙNG MÃI MÃI)
+───────────────────────────────────────────────────────────
+
+BƯỚC 1: Mở VBA Editor trong Excel
+   • Mở Microsoft Excel (file mới hoặc file cũ đều được)
+   • Nhấn phím: Alt + F11
+   → Cửa sổ "Microsoft Visual Basic for Applications" sẽ mở
+
+BƯỚC 2: Tạo Personal Macro Workbook (nếu chưa có)
+   • Trong VBA Editor, tìm bên trái cửa sổ
+   • Nếu KHÔNG thấy "VBAProject (PERSONAL.XLSB)":
+     1. Quay lại Excel (nhấn Alt + F11)
+     2. View → Macros (hoặc Alt + F8)
+     3. Gõ tên bất kỳ (vd: "temp") → Create
+     4. Trong hộp thoại, chọn "Personal Macro Workbook"
+     5. Nhấn OK
+     6. Đóng cửa sổ code vừa mở
+     7. Quay lại VBA Editor (Alt + F11)
+
+BƯỚC 3: Import file DocTien.bas
+   • Trong VBA Editor:
+   • Click vào "VBAProject (PERSONAL.XLSB)" để chọn nó
+   • Menu: File → Import File...
+   • Tìm và chọn file: DocTien.bas
+     (File này ở: C:\Users\nltruong\Desktop\doctien\DocTien.bas)
+   • Nhấn "Open"
+
+BƯỚC 4: Lưu lại
+   • Nhấn Ctrl + S hoặc File → Save
+   • Đóng VBA Editor (nhấn nút X)
+
+✅ XONG! Từ giờ mở Excel là có hàm DocTien() luôn!
+
+
+📝 CÁCH SỬ DỤNG
+───────────────────────────────────────────────────────────
+
+Trong Excel, gõ công thức:
+
+    =DocTien(A1)
+    =DocTien(100000)
+
+
+🎨 VÍ DỤ
+───────────────────────────────────────────────────────────
+
+Trong ô B2, gõ: =DocTien(A2)
+
+    A                   B
+    ───────────────     ─────────────────────────────────────
+    12345               Mười hai nghìn ba trăm bốn mươi lăm đồng
+    1000000             Một triệu đồng
+    2500.50             Hai nghìn năm trăm đồng phẩy năm mươi đồng
+
+
+⚠️ NẾU GẶP LỖI #NAME?
+───────────────────────────────────────────────────────────
+
+→ Có nghĩa là Excel chưa nhận ra hàm DocTien()
+→ Kiểm tra lại BƯỚ 3 xem đã import file DocTien.bas chưa
+→ Hoặc thử đóng Excel và mở lại
+
+
+💡 CÁCH NHANH HƠN (COPY-PASTE CODE)
+───────────────────────────────────────────────────────────
+
+Nếu không muốn import file:
+
+1. Mở file: DocTien.bas bằng Notepad
+2. Copy TOÀN BỘ code
+3. Mở Excel → Alt + F11
+4. Trong VBA Editor:
+   • Click "VBAProject (PERSONAL.XLSB)"
+   • Insert → Module
+   • Paste code vào cửa sổ bên phải
+5. Lưu lại (Ctrl + S)
+
+
+📞 HỖ TRỢ
+───────────────────────────────────────────────────────────
+
+Nguyễn Lê Trường - 0888849413
+
+
+═══════════════════════════════════════════════════════════
+Made with ❤️ | Version 1.0.0
+═══════════════════════════════════════════════════════════

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn cài đặt DocTien cho Excel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .step {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 15px;
+            border-left: 5px solid #2563eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-right: 15px;
+        }
+        
+        .step h2 {
+            display: inline-block;
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .step-content {
+            margin-left: 55px;
+            color: #475569;
+            line-height: 1.8;
+        }
+        
+        .code {
+            background: #1e293b;
+            color: #10b981;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #92400e;
+        }
+        
+        .alert {
+            background: #fef2f2;
+            border: 2px solid #fca5a5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .alert-title {
+            color: #dc2626;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .example {
+            background: #ecfdf5;
+            border: 2px solid #6ee7b7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .example-title {
+            color: #047857;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #cbd5e1;
+        }
+        
+        th {
+            background: #047857;
+            color: white;
+            font-weight: 600;
+        }
+        
+        td {
+            background: white;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn:hover {
+            background: #1e40af;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
+        }
+        
+        .footer {
+            background: #f1f5f9;
+            padding: 30px;
+            text-align: center;
+            color: #64748b;
+        }
+        
+        .success {
+            background: #10b981;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 DocTien cho Excel</h1>
+            <p>Chuyển số thành chữ tiếng Việt tự động</p>
+        </div>
+        
+        <div class="content">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h2>Mở VBA Editor</h2>
+                <div class="step-content">
+                    <p>Trong Microsoft Excel, nhấn phím tắt:</p>
+                    <div class="code">Alt + F11</div>
+                    <p>Cửa sổ "Microsoft Visual Basic for Applications" sẽ hiện ra.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">2</span>
+                <h2>Import File DocTien.bas</h2>
+                <div class="step-content">
+                    <p>Trong VBA Editor:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Chọn menu <span class="highlight">File → Import File...</span></li>
+                        <li>Tìm đến file <span class="highlight">DocTien.bas</span></li>
+                        <li>Đường dẫn: <code style="background: #e5e7eb; padding: 4px 8px; border-radius: 4px;">C:\Users\nltruong\Desktop\doctien\DocTien.bas</code></li>
+                        <li>Nhấn <span class="highlight">Open</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">3</span>
+                <h2>Lưu File Excel</h2>
+                <div class="step-content">
+                    <p>File Excel của bạn phải được lưu dạng <span class="highlight">.xlsm</span> (Macro-Enabled):</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Nhấn <span class="highlight">Ctrl + S</span> hoặc File → Save As</li>
+                        <li>Chọn định dạng: <span class="highlight">Excel Macro-Enabled Workbook (*.xlsm)</span></li>
+                        <li>Nhấn Save</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="success">
+                ✅ Xong! Giờ bạn có thể dùng hàm =DocTien() trong file Excel này!
+            </div>
+            
+            <div class="example">
+                <div class="example-title">🎨 Ví dụ sử dụng</div>
+                <p>Trong Excel, tại ô <strong>B2</strong>, gõ công thức:</p>
+                <div class="code">=DocTien(A2)</div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cột A (Số)</th>
+                            <th>Cột B (Công thức)</th>
+                            <th>Kết quả</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>=DocTien(A2)</td>
+                            <td>Mười hai nghìn ba trăm bốn mươi lăm đồng</td>
+                        </tr>
+                        <tr>
+                            <td>1000000</td>
+                            <td>=DocTien(A3)</td>
+                            <td>Một triệu đồng</td>
+                        </tr>
+                        <tr>
+                            <td>2500.50</td>
+                            <td>=DocTien(A4)</td>
+                            <td>Hai nghìn năm trăm đồng phẩy năm mươi đồng</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="alert">
+                <div class="alert-title">⚠️ Nếu gặp lỗi #NAME?</div>
+                <p>Lỗi này có nghĩa là Excel chưa nhận diện được hàm <strong>DocTien()</strong>.</p>
+                <p><strong>Giải pháp:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Kiểm tra lại Bước 2 - đã import file DocTien.bas chưa?</li>
+                    <li>File Excel đã lưu dạng .xlsm chưa?</li>
+                    <li>Thử đóng Excel và mở lại</li>
+                    <li>Nếu có cảnh báo "Security Warning", nhấn <strong>Enable Content</strong></li>
+                </ul>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">💡</span>
+                <h2>Dùng cho MỌI file Excel (Optional)</h2>
+                <div class="step-content">
+                    <p>Để hàm DocTien() có sẵn trong mọi file Excel, cài vào <strong>Personal Macro Workbook</strong>:</p>
+                    <ol style="margin-left: 20px; margin-top: 10px; line-height: 2;">
+                        <li>Mở Excel → nhấn <span class="highlight">Alt + F11</span></li>
+                        <li>Trong VBA Editor, tìm <strong>"VBAProject (PERSONAL.XLSB)"</strong> bên trái</li>
+                        <li>Nếu không thấy, tạo mới:
+                            <ul style="margin-left: 20px;">
+                                <li>View → Macros (Alt + F8)</li>
+                                <li>Gõ tên bất kỳ → chọn "Personal Macro Workbook" → Create</li>
+                            </ul>
+                        </li>
+                        <li>Import file DocTien.bas vào PERSONAL.XLSB</li>
+                        <li>Lưu lại (Ctrl + S)</li>
+                    </ol>
+                    <p style="margin-top: 15px;"><strong>Lợi ích:</strong> Từ giờ mở Excel nào cũng có sẵn hàm DocTien()!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Nguyễn Lê Trường</strong> - 0888849413</p>
+            <p style="margin-top: 10px;">Made with ❤️ for Vietnamese Excel users | Version 1.0.0</p>
+        </div>
+    </div>
+</body>
+</html>

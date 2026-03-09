@@ -1,0 +1,67 @@
+═══════════════════════════════════════════════════════════
+    🚀 DOCTIEN - INSTALLER HOAN CHINH
+═══════════════════════════════════════════════════════════
+
+✅ DA SUA LOI GUI - NUT HIEN THI DAY DU!
+✅ DA SUA DUONG DAN - HOAT DONG TREN MOI MAY!
+
+
+📦 FILE QUAN TRONG NHAT
+═══════════════════════════════════════════════════════════
+
+>>> DocTien_AutoInstaller.exe <<<
+
+File nay o: c:\Users\nltruong\Desktop\doctien\dist\
+
+
+🚀 CAI DAT SIEU NHANH
+═══════════════════════════════════════════════════════════
+
+1. Nhan doi chuot: DocTien_AutoInstaller.exe
+2. Nhan nut "[Cai dat tu dong]" (nut xanh ben duoi)
+3. Cho 10-20 giay
+4. Nhan "OK" khi thay thong bao thanh cong
+5. XONG!
+
+
+✅ SAU KHI CAI DAT
+═══════════════════════════════════════════════════════════
+
+1. Mo Excel
+2. Go: =DocTien(A1)
+3. Xong!
+
+
+📝 VI DU
+═══════════════════════════════════════════════════════════
+
+=DocTien(12345)
+→ Muoi hai nghin ba tram bon muoi lam dong
+
+=DocTien(1000000)
+→ Mot trieu dong
+
+
+⚠️ NEU GAP LOI "Trust access to VBA project"
+═══════════════════════════════════════════════════════════
+
+1. Mo Excel
+2. File → Options → Trust Center → Trust Center Settings
+3. Macro Settings
+4. Tich: "Trust access to the VBA project object model"
+5. OK
+6. Chay lai DocTien_AutoInstaller.exe
+
+
+💡 CAC THAY DOI MOI
+═══════════════════════════════════════════════════════════
+
+✅ FIX: Cua so GUI lon hon (650x550) - nut hien thi day du
+✅ FIX: Duong dan linh hoat - chay duoc tren moi may
+✅ FIX: Layout tot hon - khong bi cat nut
+✅ THEM: Tu dong nhung file DocTien.bas vao .exe
+
+
+═══════════════════════════════════════════════════════════
+Version 1.0.1 | Fixed GUI & Paths
+═════════════════════════════════════════════════════════════
