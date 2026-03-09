@@ -1,89 +1,61 @@
-# 📊 DocTien - Excel Add-in Converter
+﻿# DocTien Excel Add-in
 
-Chuyển đổi số thành chữ tiếng Việt trong Microsoft Excel.
+Chuyển số thành chữ tiếng Việt trong Microsoft Excel bằng hàm `DocTien()`.
 
-## 🎯 Tính năng
+## Tính năng
 
-- ✅ Hàm **DocTien()** có thể sử dụng như công thức Excel bình thường
-- ✅ Hỗ trợ số từ 0 đến 999,999,999,999,999 (999 nghìn tỷ)
-- ✅ Hỗ trợ số thập phân (2 chữ số)
-- ✅ Tự động viết hoa chữ cái đầu
-- ✅ Cài đặt dễ dàng bằng file .exe
+- Dùng trực tiếp trong Excel với công thức `=DocTien(A1)`
+- Hỗ trợ số lớn và số thập phân
+- Có bộ cài `.exe` cho người dùng không muốn thao tác VBA thủ công
+- Có file `DocTien.bas` để import thủ công khi cần
 
-## 📦 Cài đặt
+## Tải nhanh
 
-### Cách 1: Sử dụng file .exe (Khuyến nghị)
+File cài mới nhất:
 
-1. Chạy file **DocTien_Installer.exe**
-2. Nhấn nút "Cài đặt"
-3. Làm theo hướng dẫn trên màn hình
+- [`DocTien_AutoInstaller_v2.exe`](dist/DocTien_AutoInstaller_v2.exe)
 
-### Cách 2: Cài đặt thủ công
+## Cài đặt
+
+### Cách 1: Dùng file `.exe`
+
+1. Chạy `DocTien_AutoInstaller_v2.exe`
+2. Nhấn `Cài đặt tự động`
+3. Nếu Excel cảnh báo bảo mật, chọn `Enable Content`
+
+### Cách 2: Import thủ công
 
 1. Mở Microsoft Excel
-2. Nhấn **Alt + F11** để mở VBA Editor
-3. Chọn **File** → **Import File**
-4. Chọn file **DocTien.bas**
+2. Nhấn `Alt + F11` để mở VBA Editor
+3. Chọn `File -> Import File`
+4. Chọn file `DocTien.bas`
 5. Đóng VBA Editor
-6. Hoàn tất!
 
-## 🚀 Sử dụng
-
-Sau khi cài đặt, bạn có thể sử dụng hàm `DocTien()` trong Excel:
+## Sử dụng
 
 ```excel
 =DocTien(A1)
 =DocTien(12345)
-=DocTien(B2)
+=DocTien(15000000000)
 ```
 
-### Ví dụ:
+## Ghi chú
 
-| Số | Công thức | Kết quả |
-|---|---|---|
-| 12345 | =DocTien(A1) | Mười hai nghìn ba trăm bốn mươi lăm đồng |
-| 1000000 | =DocTien(A2) | Một triệu đồng |
-| 2500.50 | =DocTien(A3) | Hai nghìn năm trăm đồng phẩy năm mươi đồng |
-| 0 | =DocTien(A4) | Không đồng |
+- Nếu cài tự động lỗi do quyền VBA/COM của Excel, hãy import `DocTien.bas` thủ công.
+- Nếu Excel chưa nhận hàm ngay, hãy đóng và mở lại Excel.
 
-## 🛠️ Build file .exe (Dành cho Developer)
+## Cấu trúc chính
 
-Nếu bạn muốn tự build file .exe từ source code:
+- `DocTien.bas`: module VBA đọc số thành chữ
+- `installer_auto.py`: bộ cài tự động
+- `installer.py`: bộ cài/fallback thủ công
+- `dist/DocTien_AutoInstaller_v2.exe`: file cài mới nhất
 
-```bash
-# Cài đặt PyInstaller
-pip install pyinstaller
+## Tác giả
 
-# Build file .exe
-pyinstaller installer.spec
-```
+- Nguyễn Lê Trường
+- Email: `niitbeo28@gmail.com`
 
-File .exe được tạo trong thư mục `dist/`
+## License
 
-## 📝 Cấu trúc Project
-
-```
-doctien/
-├── DocTien.bas          # VBA module chứa hàm DocTien()
-├── installer.py         # GUI installer
-├── installer.spec       # PyInstaller config
-├── README.md            # File này
-└── dist/
-    └── DocTien_Installer.exe  # File cài đặt
-```
-
-## ❓ Hỗ trợ
-
-Nếu gặp vấn đề:
-
-1. Đảm bảo bạn đã cài đặt Microsoft Excel
-2. Kiểm tra macro đã được enable trong Excel (File → Options → Trust Center → Trust Center Settings → Macro Settings)
-3. Thử import file DocTien.bas thủ công (xem Cách 2)
-
-## 📄 License
-
-MIT License - Sử dụng tự do cho mọi mục đích.
-
----
-
-Made with ❤️ for Vietnamese Excel users
+MIT
